@@ -641,3 +641,45 @@ a {
         margin: 10px 0;
     }
 }
+
+/* Ensure images scale correctly on mobile devices */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Adjust flex direction for .wrap class on mobile devices */
+@media (max-width: 768px) {
+    .wrap {
+        flex-direction: column;
+    }
+}
+
+/* Adjust font sizes for better readability on mobile */
+@media (max-width: 768px) {
+    .title h1 {
+        font-size: 32px;
+    }
+    .title h2 {
+        font-size: 18px;
+    }
+    .dance-med {
+        font-size: 24px;
+    }
+}
+
+/* Adjust grid layout for .container class on mobile devices */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Adjust size and padding for .block class on mobile devices */
+@media (max-width: 768px) {
+    .block {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+}
